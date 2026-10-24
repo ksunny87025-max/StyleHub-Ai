@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StyleHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+StyleHub
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">Kids</a>
+<a href="#">Offers</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="search">
+<input type="text" placeholder="Search Products...">
+</div>
+
+<div class="icons">
+<span onclick="openWishlist()">❤️</span>
+<span onclick="openCart()">🛒</span>
+<span onclick="openProfile()">👤</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Fashion That Defines You</h1>
+
+<p>Discover New Trends Every Day</p>
+
+<a href="products.html">
+    <button>Shop Now</button>
+</a>
+
+</section>
+
+<section class="products">
+
+<h2>Trending Products</h2>
+<div class="product-grid">
+
+<div class="product-card">
+<img src="https://picsum.photos/300/350?random=11" alt="Black T-Shirt">
+<h3>Black T-Shirt</h3>
+<p class="price">₹799</p>
+
+<button onclick="addToCart('Black T-Shirt',799)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('Black T-Shirt')">
+❤️ Wishlist
+</button>
+</div>
+
+<div class="product-card">
+<img src="https://picsum.photos/300/350?random=12" alt="Blue Hoodie">
+<h3>Blue Hoodie</h3>
+<p class="price">₹1499</p>
+
+<button onclick="addToCart('Blue Hoodie',1499)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('Blue Hoodie')">
+❤️ Wishlist
+</button>
+</div>
+
+<div class="product-card">
+<img src="https://picsum.photos/300/350?random=13" alt="White Sneakers">
+<h3>White Sneakers</h3>
+<p class="price">₹2499</p>
+
+<button onclick="addToCart('White Sneakers',2499)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('White Sneakers')">
+❤️ Wishlist
+</button>
+</div>
+
+</div>
+
+</section>
+<footer>
+
+<div class="footer-content">
+
+<h3>StyleHub</h3>
+
+<p>Your Fashion Partner</p>
+
+<p>📧 support@stylehub.com</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>© 2026 StyleHub. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+<div id="ai-button" onclick="toggleAI()">
+🤖
+</div>
+
+<div id="ai-chat">
+<div class="ai-header">
+StyleHub AI
+</div>
+
+<div id="ai-messages">
+<p>👋 Hi! I am your AI Fashion Assistant.</p>
+</div>
+
+<input
+type="text"
+id="user-input"
+placeholder="Ask about fashion..."
+>
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+</div>
+</body>
+</html>

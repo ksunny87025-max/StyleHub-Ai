@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | StyleHub</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<a href="index.html">StyleHub</a>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="cart.html">Cart</a>
+<a href="wishlist.html">Wishlist</a>
+</nav>
+
+</header>
+
+<section class="products">
+
+<h1>All Products</h1>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="https://picsum.photos/300/350?random=21">
+
+<h3>Black T-Shirt</h3>
+
+<p class="price">₹799</p>
+
+<button onclick="addToCart('Black T-Shirt',799)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('Black T-Shirt')">
+❤️ Wishlist
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://picsum.photos/300/350?random=22">
+
+<h3>Blue Hoodie</h3>
+
+<p class="price">₹1499</p>
+
+<button onclick="addToCart('Blue Hoodie',1499)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('Blue Hoodie')">
+❤️ Wishlist
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://picsum.photos/300/350?random=23">
+
+<h3>White Sneakers</h3>
+
+<p class="price">₹2499</p>
+
+<button onclick="addToCart('White Sneakers',2499)">
+🛒 Add to Cart
+</button>
+
+<button onclick="addToWishlist('White Sneakers')">
+❤️ Wishlist
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
